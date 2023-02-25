@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for running the parsing process
+Requires=parse.service
+
+[Timer]
+Unit=parse.service
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target
