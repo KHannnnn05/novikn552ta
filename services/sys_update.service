@@ -1,0 +1,12 @@
+[Unit]
+Description=Service for running the sustem update procces
+Wants=sys_update.timer
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/novikn552ta/
+ExecStart=/bin/bash -c "make system_update"
+
+[Install]
+WantedBy=multi-user.target

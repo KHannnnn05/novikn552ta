@@ -4,8 +4,8 @@ Description=Service for running the bot
 [Service]
 Type=simple
 User=ubuntu
-WorkingDirectory=/home/ubuntu/novikn552ta/cmd
-ExecStart=/bin/bash -c "cd /home/ubuntu/novikn552ta/cmd make start_bot"
+WorkingDirectory=/home/ubuntu/novikn552ta/cmd/
+ExecStart=/bin/bash -c "make start_bot"
 Restart=on-failure
 
 [Install]

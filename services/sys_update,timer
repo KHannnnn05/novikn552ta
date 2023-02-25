@@ -1,0 +1,10 @@
+[Unit]
+Description=Service for running the sustem update procces
+Requires=sys_update.service
+
+[Timer]
+Unit=sys_update.service
+OnCalendar=Weekly
+
+[Install]
+WantedBy=timers.target

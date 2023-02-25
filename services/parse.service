@@ -5,8 +5,8 @@ Wants=parse.timer
 [Service]
 Type=oneshot
 User=ubuntu
-WorkingDirectory=/home/ubuntu/novikn552ta
-ExecStart=/bin/bash -c "cd /home/ubuntu/novikn552ta/cmd make start_parse"
+WorkingDirectory=/home/ubuntu/novikn552ta/cmd/
+ExecStart=/bin/bash -c "make start_parse"
 
 [Install]
 WantedBy=multi-user.target
