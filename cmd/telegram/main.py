@@ -24,7 +24,7 @@ with sqlite3.connect('/home/ubuntu/novikn552ta/novikn552ta.sqlite3') as con:
 class UserState(StatesGroup):
     id: int = State()
 
-@dp.message_handler(commands=['getURL'])
+@dp.message_handler(commands=['get_link'])
 async def getURL(message: types.Message):
     await message.answer(
         "Введите пожалуйста ID заказа/тендера.\n" + "Вводите пожалуйста только цифры, без пробелов и посторонних символов!"
