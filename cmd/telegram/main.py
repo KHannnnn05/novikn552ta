@@ -70,7 +70,7 @@ async def send_info(message: types.Message):
 async def send_start(message: types.Message):
     await message.reply(
         "Здравствуйте!\n" + "Выберите что вы хотите сделать:\n" + \
-        "Получить ссылку на заказ/товар -> /getURL"
+        "Получить ссылку на заказ/товар -> /get_link"
     )
 
 
